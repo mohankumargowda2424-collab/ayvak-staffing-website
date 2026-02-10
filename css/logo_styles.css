@@ -1,0 +1,15 @@
+.logo-img {
+    height: 60px;
+    /* Adjusted height for better visibility */
+    width: auto;
+    object-fit: contain;
+}
+
+/* Updated Navbar container to handle image logo better */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    /* Added padding to prevent logo touching edge */
+}
