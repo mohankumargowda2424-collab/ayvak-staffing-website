@@ -1,23 +1,25 @@
 /* Antigravity Premium Design System */
 :root {
     /* Color Palette */
-    --bg-dark: #0f172a;
-    /* Deep Slate Navy */
-    --bg-darker: #020617;
-    /* Almost Black */
+    --bg-dark: #1e293b;
+    /* Lighter Slate Navy (Was #0f172a) */
+    --bg-darker: #0f172a;
+    /* Deep Slate (Was #020617) */
     --primary: #3b82f6;
     /* Electric Blue */
-    --primary-glow: rgba(59, 130, 246, 0.5);
+    --primary-glow: rgba(59, 130, 246, 0.6);
     --secondary: #eab308;
     /* Gold Accent */
-    --secondary-glow: rgba(234, 179, 8, 0.4);
+    --secondary-glow: rgba(234, 179, 8, 0.5);
     --text-white: #f8fafc;
-    --text-muted: #94a3b8;
+    --text-muted: #cbd5e1;
+    /* Lighter muted text */
 
     /* Glassmorphism */
-    --glass-bg: rgba(30, 41, 59, 0.7);
-    --glass-border: rgba(255, 255, 255, 0.08);
-    --glass-highlight: rgba(255, 255, 255, 0.15);
+    --glass-bg: rgba(30, 41, 59, 0.6);
+    /* More transparent/lighter glass */
+    --glass-border: rgba(255, 255, 255, 0.12);
+    --glass-highlight: rgba(255, 255, 255, 0.2);
 
     /* Typography */
     --font-heading: 'Outfit', sans-serif;
@@ -43,8 +45,8 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     background-image:
-        radial-gradient(circle at 10% 20%, rgba(59, 130, 246, 0.08) 0%, transparent 40%),
-        radial-gradient(circle at 90% 80%, rgba(234, 179, 8, 0.05) 0%, transparent 40%);
+        radial-gradient(circle at 10% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 45%),
+        radial-gradient(circle at 90% 80%, rgba(234, 179, 8, 0.08) 0%, transparent 45%);
 }
 
 .container {
