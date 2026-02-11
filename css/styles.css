@@ -60,9 +60,7 @@ img {
 /* Navbar */
 .navbar {
     background: transparent;
-    /* Transparent as requested for landing page feel */
     position: absolute;
-    /* Integrate into hero */
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -71,15 +69,21 @@ img {
     padding-top: 20px;
 }
 
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
 .navbar-container.centered-nav {
     justify-content: center;
     height: auto;
 }
 
-/* Logo Animation & Size (Enhanced) */
+/* Logo Animation & Size */
 .logo-img {
     height: 100px;
-    /* Big size */
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.6));
     animation: logoFloat 4s ease-in-out infinite;
@@ -102,6 +106,86 @@ img {
     filter: drop-shadow(0 0 25px rgba(37, 99, 235, 0.8));
 }
 
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: var(--dark);
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--primary);
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px -5px rgba(37, 99, 235, 0.4);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: white;
+}
+
+.btn-secondary {
+    background: white;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.btn-outline {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-block {
+    width: 100%;
+    justify-content: center;
+}
+
+.btn-lg {
+    padding: 18px 36px;
+    font-size: 1.1rem;
+}
+
 /* Hero Section */
 .hero {
     position: relative;
@@ -110,7 +194,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* Default background */
     background: url('../assets/hero_bg.png') no-repeat center center/cover;
     transition: background-image 1s ease-in-out;
     color: var(--dark);
@@ -160,6 +243,31 @@ img {
     line-height: 1;
 }
 
+.text-gradient {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--gray);
+    margin-bottom: 40px;
+}
+
+.badge-shine {
+    display: inline-block;
+    padding: 8px 16px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    color: white;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+}
+
 /* Quick Links (On-Screen Nav) */
 .hero-quick-links {
     margin-top: 50px;
@@ -207,18 +315,6 @@ img {
 .quick-link-card:hover i {
     transform: scale(1.2);
     color: var(--secondary);
-}
-
-.badge-shine {
-    display: inline-block;
-    padding: 8px 16px;
-    background: linear-gradient(90deg, var(--primary), var(--secondary));
-    color: white;
-    border-radius: 30px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    margin-bottom: 20px;
-    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
 }
 
 /* Stats Ticker */
