@@ -3,13 +3,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
 
-    if (mobileBtn) {
+    if (mobileBtn && navLinks) {
         mobileBtn.addEventListener('click', () => {
-            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-            if (navLinks.style.display === 'flex') {
+            const isFlex = navLinks.style.display === 'flex';
+            navLinks.style.display = isFlex ? 'none' : 'flex';
+
+            if (!isFlex) {
                 navLinks.style.flexDirection = 'column';
                 navLinks.style.position = 'absolute';
-                navLinks.style.top = '100%';
+                navLinks.style.top = '80px'; // Adjust based on navbar height
                 navLinks.style.left = '0';
                 navLinks.style.width = '100%';
                 navLinks.style.background = 'white';
@@ -32,10 +34,25 @@ document.addEventListener('DOMContentLoaded', () => {
                     behavior: 'smooth'
                 });
                 // Close mobile menu if open
-                if (window.innerWidth <= 768) {
+                if (window.innerWidth <= 768 && navLinks) {
                     navLinks.style.display = 'none';
                 }
             }
         });
     });
+
+    // Handle Quick Apply Form
+    const quickApplyForm = document.getElementById('quick-apply-form');
+    if (quickApplyForm) {
+        quickApplyForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('qa-name').value;
+            const profession = document.getElementById('qa-profession').value;
+
+            // In a real app, this would send data to a server
+            alert(`Thanks ${name}! We have received your details for ${profession} roles. Our team will contact you shortly.`);
+
+            quickApplyForm.reset();
+        });
+    }
 });
