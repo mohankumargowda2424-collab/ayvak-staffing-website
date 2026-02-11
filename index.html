@@ -4,248 +4,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayvak Staffing - Hire Smarter, Work Better</title>
+    <title>Ayvak Staffing - The Future of Work</title>
     <meta name="description"
-        content="Ayvak Staffing connects top talent with leading companies. Find your next job or hire exceptional candidates today.">
+        content="Ayvak Staffing connects world-class companies with exceptional talent. Premier staffing solutions for the modern enterprise.">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-    <!-- Navigation (Logo Only) -->
-    <nav class="navbar">
-        <div class="container navbar-container centered-nav">
+    <!-- Premium Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-container">
             <a href="#" class="logo">
-                <img src="assets/logo.png" alt="Ayvak Staffing Logo" class="logo-img">
+                <img src="assets/logo.png" alt="Ayvak Staffing" class="logo-img">
             </a>
-            <!-- Mobile menu button removed as requested -->
+
+            <ul class="nav-links">
+                <li><a href="#vision" class="nav-link">Vision</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#industries" class="nav-link">Industries</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#quick-apply" class="btn btn-sm btn-glow">Hire Top Talent</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" aria-label="Toggle Menu">
+                <i class="ph ph-list"></i>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero" id="hero-slider">
-        <div class="hero-bg-overlay"></div>
-        <div class="container hero-container">
-            <div class="hero-content-wrapper glass-panel">
-                <div class="hero-text center-text">
-                    <span class="badge badge-shine">Premium Staffing Solutions</span>
-                    <h1 class="hero-title">Hire Top Talent.<br>Build Your <span class="text-gradient">Future.</span>
-                    </h1>
-                    <p class="hero-subtitle">Ayvak Staffing connects world-class companies with exceptional candidates.
-                        We bridge the gap between potential and success.</p>
+    <header class="hero">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-grid">
+            <div class="hero-content fade-in-up">
+                <div class="badge-pill">
+                    <span class="dot"></span> Now Hiring for 2026
+                </div>
+                <h1 class="hero-title">
+                    Unlock <span class="text-gradient">Potential.</span><br>
+                    Accelerate <span class="text-gradient-gold">Growth.</span>
+                </h1>
+                <p class="hero-subtitle">
+                    We bridge the gap between elite talent and forward-thinking enterprises.
+                    Experience staffing reimagined for the speed of modern business.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="#quick-apply" class="btn btn-primary btn-lg">
+                        Find a Job <i class="ph ph-arrow-right"></i>
+                    </a>
+                    <a href="#vision" class="btn btn-glass btn-lg">
+                        Our Vision
+                    </a>
+                </div>
 
-                    <!-- Main CTA Buttons -->
-                    <div class="hero-cta">
-                        <a href="#employers" class="btn btn-primary btn-lg">Hire Talent <i
-                                class="ph ph-arrow-right"></i></a>
-                        <a href="#quick-apply" class="btn btn-outline btn-lg">Find a Job <i
-                                class="ph ph-magnifying-glass"></i></a>
+                <div class="hero-trust">
+                    <span>Trusted by leaders in:</span>
+                    <div class="trust-icons">
+                        <i class="ph ph-code"></i>
+                        <i class="ph ph-buildings"></i>
+                        <i class="ph ph-chart-line-up"></i>
+                        <i class="ph ph-atom"></i>
                     </div>
+                </div>
+            </div>
 
-                    <!-- On-Screen Navigation (Quick Links) -->
-                    <div class="hero-quick-links">
-                        <a href="#vision" class="quick-link-card">
-                            <i class="ph ph-eye"></i>
-                            <span>Our Vision</span>
-                        </a>
-                        <a href="#contact" class="quick-link-card">
-                            <i class="ph ph-phone-call"></i>
-                            <span>Contact Us</span>
-                        </a>
-                        <a href="#industries" class="quick-link-card">
-                            <i class="ph ph-buildings"></i>
-                            <span>Industries</span>
-                        </a>
+            <div class="hero-visual fade-in-delayed">
+                <!-- Abstract CSS Composition instead of Image -->
+                <div class="abstract-composition">
+                    <div class="card-float card-1 glass-panel">
+                        <div class="card-icon"><i class="ph ph-briefcase"></i></div>
+                        <div class="card-text">
+                            <h4>98%</h4>
+                            <p>Placement Rate</p>
+                        </div>
                     </div>
+                    <div class="card-float card-2 glass-panel">
+                        <div class="card-icon gold"><i class="ph ph-star-fill"></i></div>
+                        <div class="card-text">
+                            <h4>Top 1%</h4>
+                            <p>Vetted Talent</p>
+                        </div>
+                    </div>
+                    <div class="card-float card-3 glass-panel">
+                        <div class="card-icon blue"><i class="ph ph-users"></i></div>
+                        <div class="card-text">
+                            <h4>500+</h4>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                    <div class="orbit-circle"></div>
+                    <div class="orbit-circle-small"></div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Stats / Trust Section -->
-    <section class="stats-ticker">
+    <!-- Services Grid -->
+    <section id="services" class="section">
         <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <h3>500+</h3>
-                    <p>Placements</p>
+            <div class="section-header center fade-in">
+                <h2 class="section-title">Elite Staffing Solutions</h2>
+                <p class="section-desc">Tailored strategies for every business need.</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="feature-card glass-panel fade-in-up">
+                    <div class="feature-icon"><i class="ph ph-users-three"></i></div>
+                    <h3>Contract Staffing</h3>
+                    <p>Flexible talent solutions to scale your workforce on demand. Perfect for project-based needs.</p>
                 </div>
-                <div class="stat-item">
-                    <h3>50+</h3>
-                    <p>Corporate Partners</p>
+                <div class="feature-card glass-panel fade-in-up delay-1">
+                    <div class="feature-icon"><i class="ph ph-briefcase"></i></div>
+                    <h3>Direct Hire</h3>
+                    <p>Permanent placement services that find the perfect cultural and technical fit for your long-term
+                        goals.</p>
                 </div>
-                <div class="stat-item">
-                    <h3>24h</h3>
-                    <p>Response Time</p>
+                <div class="feature-card glass-panel fade-in-up delay-2">
+                    <div class="feature-icon"><i class="ph ph-rocket-launch"></i></div>
+                    <h3>Executive Search</h3>
+                    <p>Headhunting services for C-suite and senior leadership roles. We find the visionaries.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Quick Apply Section (New Feature) -->
-    <section id="quick-apply" class="section quick-apply-section">
+    <!-- Quick Apply (Glass Section) -->
+    <section id="quick-apply" class="section section-highlight">
         <div class="container">
-            <div class="apply-card glass-effect">
-                <div class="apply-content">
-                    <div class="apply-text">
-                        <span class="badge">Candidates</span>
-                        <h2>Ready for your next move?</h2>
-                        <p>Drop your details below and our recruiters will call you within 24 hours.</p>
-                    </div>
-                    <form id="quick-apply-form" class="quick-form">
-                        <div class="input-group">
-                            <input type="text" id="qa-name" required placeholder="Your Name">
+            <div class="split-layout">
+                <div class="split-content fade-in-left">
+                    <span class="badge-text">For Candidates</span>
+                    <h2>Ready to Level Up?</h2>
+                    <p>Your dream job is waiting. Submit your details and let our AI-driven matching engine connect you
+                        with top employers.</p>
+                    <ul class="check-list-modern">
+                        <li><i class="ph ph-check-circle"></i> Resume Review</li>
+                        <li><i class="ph ph-check-circle"></i> Interview Prep</li>
+                        <li><i class="ph ph-check-circle"></i> Salary Negotiation</li>
+                    </ul>
+                </div>
+                <div class="split-form fade-in-right">
+                    <form id="quick-apply-form" class="glass-form">
+                        <h3>Quick Application</h3>
+                        <div class="form-group">
+                            <label for="qa-name">Full Name</label>
+                            <input type="text" id="qa-name" placeholder="John Doe" required>
                         </div>
-                        <div class="input-group">
-                            <input type="text" id="qa-profession" required
-                                placeholder="Profession (e.g., Java Developer)">
+                        <div class="form-group">
+                            <label for="qa-profession">Profession</label>
+                            <input type="text" id="qa-profession" placeholder="e.g. Software Engineer" required>
                         </div>
-                        <div class="input-group">
-                            <input type="tel" id="qa-phone" required placeholder="Phone Number">
+                        <div class="form-group">
+                            <label for="qa-phone">Phone Number</label>
+                            <input type="tel" id="qa-phone" placeholder="+91 98765 43210" required>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block">Quick Apply <i
-                                class="ph ph-paper-plane-right"></i></button>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Submit Application <i class="ph ph-paper-plane-right"></i>
+                        </button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- For Employers -->
-    <section id="employers" class="section split-section">
+    <!-- Industries Slider (Grid for now) -->
+    <section id="industries" class="section">
         <div class="container">
-            <div class="split-layout">
-                <div class="split-image">
-                    <img src="assets/employer_img.png" alt="Corporate Team Meeting" class="rounded-img shadow-lg">
-                </div>
-                <div class="split-content">
-                    <span class="badge badge-secondary">For Employers</span>
-                    <h2>Staffing solved. Permanently.</h2>
-                    <p>Stop wasting time on screening. We deliver pre-vetted, highly qualified candidates who fit your
-                        culture and your tech stack.</p>
-                    <ul class="check-list">
-                        <li><i class="ph ph-check-circle-fill"></i> <strong>Speed:</strong> Candidates in 24-48 hours.
-                        </li>
-                        <li><i class="ph ph-check-circle-fill"></i> <strong>Quality:</strong> Top 1% of talent pool.
-                        </li>
-                        <li><i class="ph ph-check-circle-fill"></i> <strong>Reliability:</strong> Replacement guarantee.
-                        </li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary">Start Hiring</a>
-                </div>
+            <div class="section-header center fade-in">
+                <h2>Industries We Power</h2>
+            </div>
+            <div class="industry-grid fade-in-up">
+                <div class="industry-pill"><i class="ph ph-code"></i> Technology</div>
+                <div class="industry-pill"><i class="ph ph-bank"></i> Finance</div>
+                <div class="industry-pill"><i class="ph ph-heartbeat"></i> Healthcare</div>
+                <div class="industry-pill"><i class="ph ph-factory"></i> Manufacturing</div>
+                <div class="industry-pill"><i class="ph ph-shopping-cart"></i> Retail</div>
+                <div class="industry-pill"><i class="ph ph-lightning"></i> Energy</div>
+                <div class="industry-pill"><i class="ph ph-truck"></i> Logistics</div>
+                <div class="industry-pill"><i class="ph ph-buildings"></i> Construction</div>
             </div>
         </div>
     </section>
 
-    <!-- For Candidates -->
-    <section id="candidates" class="section split-section reverse">
-        <div class="container">
-            <div class="split-layout">
-                <div class="split-image">
-                    <img src="assets/candidate_img.png" alt="Professional Candidate" class="rounded-img shadow-lg">
+    <!-- Contact Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="assets/logo.png" alt="Ayvak" class="footer-logo">
+                <p>Connecting people with purpose.</p>
+                <div class="social-links">
+                    <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+                    <a href="#"><i class="ph ph-twitter-logo"></i></a>
+                    <a href="#"><i class="ph ph-instagram-logo"></i></a>
                 </div>
-                <div class="split-content">
-                    <span class="badge badge-tertiary">For Candidates</span>
-                    <h2>Your career, upgraded.</h2>
-                    <p>We work with industry leaders. Whether you're looking for remote work, high-growth startups, or
-                        established enterprises, we have the connections.</p>
-                    <ul class="check-list">
-                        <li><i class="ph ph-check-circle-fill"></i> Exclusive job openings</li>
-                        <li><i class="ph ph-check-circle-fill"></i> Salary negotiation support</li>
-                        <li><i class="ph ph-check-circle-fill"></i> Career guidance</li>
-                    </ul>
-                    <a href="#quick-apply" class="btn btn-secondary">Apply Now</a>
-                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#vision">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="ph ph-phone"></i> +91 63795 98003</p>
+                <p><i class="ph ph-envelope"></i> info@ayvakstaffing.com</p>
+                <p><i class="ph ph-map-pin"></i> Secunderabad, Telangana</p>
             </div>
         </div>
-    </section>
-
-    <!-- Industries Section (Visual Grid) -->
-    <section class="section industries" id="industries">
-        <div class="container">
-            <div class="section-header center">
-                <h2>Industries We Serve</h2>
-                <p>Expertise across major sectors.</p>
-            </div>
-
-            <div class="grid-3">
-                <div class="industry-card-modern">
-                    <i class="ph ph-code icon-lg"></i>
-                    <h3>IT & Tech</h3>
-                </div>
-                <div class="industry-card-modern">
-                    <i class="ph ph-factory icon-lg"></i>
-                    <h3>Manufacturing</h3>
-                </div>
-                <div class="industry-card-modern">
-                    <i class="ph ph-chart-line-up icon-lg"></i>
-                    <h3>Finance</h3>
-                </div>
-                <div class="industry-card-modern">
-                    <i class="ph ph-heartbeat icon-lg"></i>
-                    <h3>Healthcare</h3>
-                </div>
-                <div class="industry-card-modern">
-                    <i class="ph ph-buildings icon-lg"></i>
-                    <h3>Admin</h3>
-                </div>
-                <div class="industry-card-modern">
-                    <i class="ph ph-briefcase icon-lg"></i>
-                    <h3>Sales</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section contact" id="contact">
-        <div class="container">
-            <div class="contact-box glass-effect">
-                <div class="section-header center">
-                    <h2>Get in Touch</h2>
-                    <p>We'd love to hear from you.</p>
-                </div>
-                <div class="contact-grid">
-                    <div class="contact-item">
-                        <div class="icon-circle"><i class="ph ph-phone"></i></div>
-                        <h3>Call Us</h3>
-                        <p>+91 63795 98003</p>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon-circle"><i class="ph ph-envelope"></i></div>
-                        <h3>Email Us</h3>
-                        <p>info@ayvakstaffing.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <div class="icon-circle"><i class="ph ph-map-pin"></i></div>
-                        <h3>Visit Us</h3>
-                        <p>Secunderabad, Telangana 500003</p>
-                    </div>
-                </div>
-                <div class="center-btn">
-                    <a href="mailto:info@ayvakstaffing.com" class="btn btn-primary btn-lg">Contact Support</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h2>Ayvak Staffing</h2>
-                    <p>Connecting Talent with Opportunity.</p>
-                </div>
-                <div class="footer-copy">
-                    <p>&copy; 2026 Ayvak Staffing. All rights reserved.</p>
-                </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; 2026 Ayvak Staffing. All rights reserved.</p>
             </div>
         </div>
     </footer>
