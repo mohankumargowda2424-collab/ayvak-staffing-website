@@ -18,49 +18,52 @@
 
 <body>
 
-    <!-- Navigation -->
+    <!-- Navigation (Logo Only) -->
     <nav class="navbar">
-        <div class="container navbar-container">
+        <div class="container navbar-container centered-nav">
             <a href="#" class="logo">
                 <img src="assets/logo.png" alt="Ayvak Staffing Logo" class="logo-img">
             </a>
-
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <i class="ph ph-list"></i>
-            </button>
-
-            <ul class="nav-links">
-                <li><a href="#employers" class="nav-link">For Employers</a></li>
-                <li><a href="#candidates" class="nav-link">For Candidates</a></li>
-                <li><a href="#industries" class="nav-link">Industries</a></li>
-                <li><a href="#contact" class="btn btn-primary">Contact Us</a></li>
-            </ul>
+            <!-- Mobile menu button removed as requested -->
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero">
+    <header class="hero" id="hero-slider">
         <div class="hero-bg-overlay"></div>
         <div class="container hero-container">
-            <div class="hero-content-wrapper">
-                <div class="hero-text">
+            <div class="hero-content-wrapper glass-panel">
+                <div class="hero-text center-text">
                     <span class="badge badge-shine">Premium Staffing Solutions</span>
                     <h1 class="hero-title">Hire Top Talent.<br>Build Your <span class="text-gradient">Future.</span>
                     </h1>
                     <p class="hero-subtitle">Ayvak Staffing connects world-class companies with exceptional candidates.
                         We bridge the gap between potential and success.</p>
+
+                    <!-- Main CTA Buttons -->
                     <div class="hero-cta">
                         <a href="#employers" class="btn btn-primary btn-lg">Hire Talent <i
                                 class="ph ph-arrow-right"></i></a>
                         <a href="#quick-apply" class="btn btn-outline btn-lg">Find a Job <i
                                 class="ph ph-magnifying-glass"></i></a>
                     </div>
+
+                    <!-- On-Screen Navigation (Quick Links) -->
+                    <div class="hero-quick-links">
+                        <a href="#vision" class="quick-link-card">
+                            <i class="ph ph-eye"></i>
+                            <span>Our Vision</span>
+                        </a>
+                        <a href="#contact" class="quick-link-card">
+                            <i class="ph ph-phone-call"></i>
+                            <span>Contact Us</span>
+                        </a>
+                        <a href="#industries" class="quick-link-card">
+                            <i class="ph ph-buildings"></i>
+                            <span>Industries</span>
+                        </a>
+                    </div>
                 </div>
-                <!-- Hero Image is handled via CSS background or we can add an img tag if preferred, 
-                     but Plan said "large visual on right". Let's use pure CSS background for the main hero 
-                     and images for sections below as per modern trends or an img tag here. 
-                     Let's use the generated hero_bg as a background for the whole section.
-                -->
             </div>
         </div>
     </header>
