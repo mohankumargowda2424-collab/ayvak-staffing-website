@@ -1,10 +1,10 @@
 /* Antigravity Premium Design System */
 :root {
     /* Color Palette */
-    --bg-dark: #1e293b;
-    /* Lighter Slate Navy (Was #0f172a) */
-    --bg-darker: #0f172a;
-    /* Deep Slate (Was #020617) */
+    --bg-dark: #233044;
+    /* Lighter Slate Navy (Was #1e293b) */
+    --bg-darker: #111c33;
+    /* Deep Slate (Was #0f172a) */
     --primary: #3b82f6;
     /* Electric Blue */
     --primary-glow: rgba(59, 130, 246, 0.6);
